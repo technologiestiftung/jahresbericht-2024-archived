@@ -16,7 +16,7 @@ const content2024 = {
   },
   offenheit: {
     title: "Smart City",
-    text: "Wie gestalten wir die Stadt von morgen? Wir wollen nicht einfach digitalisieren, sondern ein offenes, partizipatives und inklusives Berlin der Zukunft erreichen. Das geht nur gemeinsam: In Experimentier-laboren und Diskussionsrunden, mit praktischen Ideen und Prototypen, die wir direkt auf die Straße bringen.",
+    text: "Wie gestalten wir die Stadt von morgen? Lorem Ipsum. Wir wollen nicht einfach digitalisieren, sondern ein offenes, partizipatives und inklusives Berlin der Zukunft erreichen. Das geht nur gemeinsam: In Experimentier-laboren und Diskussionsrunden, mit praktischen Ideen und Prototypen, die wir direkt auf die Straße bringen.",
   },
   vortwort: {
     title: "Schön, dass Sie hier sind.<br>Wir sind es auch. Seit 30 Jahren.",
