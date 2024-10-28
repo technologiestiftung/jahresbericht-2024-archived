@@ -1,0 +1,49 @@
+@import "../../styles/base.scss";
+
+:local {
+  .wrapper {
+    padding: 80px 0;
+    max-width: 1160px;
+    margin: 0 auto;
+    .logos {
+      display: flex;
+      gap: 16px;
+      a {
+        display: block;
+        height: 64px;
+        width: 64px;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .last {
+    background: $Hauptfarbe-TSB-Dunkelblau;
+    @media screen and (min-width: $absolute-break) {
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+    }
+    .paragrah {
+      color: var(--Wei, #fff);
+      font-family: "Clan Pro";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin: 0;
+    }
+    & > div {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 43px 0 37px 0;
+      display: flex;
+      justify-content: space-between;
+      & > div {
+        display: flex;
+        gap: 48px;
+      }
+    }
+  }
+}

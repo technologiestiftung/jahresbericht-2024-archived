@@ -1,0 +1,59 @@
+@import "../../styles/base.scss";
+
+:local {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .wrapper {
+    position: relative;
+    .bg {
+      position: sticky;
+      z-index: -1;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        opacity: 0;
+        width: 70%;
+        animation: fadeIn 0.5s ease-in-out forwards;
+      }
+    }
+    .content {
+      height: fit-content;
+      width: 373px;
+      padding-bottom: 40vh;
+      .container {
+        background-color: white;
+        border: 4px solid $Hauptfarbe-TSB-Dunkelblau;
+        padding: 32px 24px;
+        .sub {
+          color: $Hauptfarbe-TSB-Dunkelblau;
+          @include body-bold;
+        }
+        h4 {
+          color: $Hauptfarbe-TSB-Dunkelblau;
+          margin: 3px 0 27px 0;
+        }
+        .paragraph {
+          @include body;
+          color: #000;
+        }
+        a {
+          margin-top: 27px;
+        }
+        &.second {
+          margin-top: 100vh;
+        }
+      }
+    }
+  }
+}

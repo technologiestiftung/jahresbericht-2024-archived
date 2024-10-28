@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Clan Pro";
+  src: local("Clan"), url(../fonts/ClanWebPro-News.woff) format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Clan Pro";
+  src: local("Clan"), url(../fonts/ClanWebPro-Bold.woff) format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Clan Pro";
+  src: local("Clan"), url(../fonts/ClanWebPro-MediumItalic.woff) format("woff");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("../fonts/SourceSerifPro-Regular.woff") format("woff");
+  font-weight: 400; /* Normal weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("../fonts/SourceSerifPro-Light.woff") format("woff");
+  font-weight: 300; /* Light weight */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("../fonts/SourceSerifPro-Bold.woff") format("woff");
+  font-weight: 700; /* Bold weight */
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Clan Pro";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: white;
+  margin: 0;
+  @media screen and (max-width: $absolute-break) {
+    font-size: 40px;
+  }
+}
+h2 {
+  font-family: "Clan Pro";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: white;
+  margin: 0;
+  @media screen and (max-width: $absolute-break) {
+    font-size: 20px;
+  }
+}
+h3 {
+  font-family: "Clan Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  @media screen and (max-width: $absolute-break) {
+    font-size: 20px;
+  }
+}
+h4 {
+  font-family: "Clan Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: white;
+  margin: 0;
+  @media screen and (max-width: $absolute-break) {
+    font-size: 20px;
+  }
+}

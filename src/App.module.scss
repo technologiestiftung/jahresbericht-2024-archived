@@ -1,0 +1,12 @@
+@import "./styles/base.scss";
+
+:local {
+  .app {
+    max-width: $max-width-content;
+    margin: 0 auto;
+    width: 100vw;
+    @media screen and (max-width: $absolute-break) {
+      overflow-x: hidden;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import "src/styles/base.scss";
+
+:local {
+  .wrapper {
+    padding: 80px 0;
+    max-width: 1160px;
+    margin: 0 auto;
+    & > h2 {
+      color: $Hauptfarbe-TSB-Dunkelblau;
+      padding: 80px 0;
+    }
+    .content {
+      display: flex;
+      gap: 28px;
+      margin: 24px 0;
+      & > div {
+        display: flex;
+        flex-direction: column;
+        & > h4 {
+          color: $Hauptfarbe-TSB-Dunkelblau;
+        }
+        & > p {
+          @include body;
+          color: $Hauptfarbe-TSB-Dunkelblau;
+          margin: 24px 0;
+        }
+        & > a {
+          margin-top: auto;
+        }
+      }
+    }
+    .sub {
+      margin: 72px 0;
+      color: $Hauptfarbe-TSB-Dunkelblau;
+    }
+    .logoWrapper {
+      display: flex;
+      gap: 80px;
+      img {
+        height: 120px;
+      }
+    }
+  }
+}

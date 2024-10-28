@@ -1,0 +1,76 @@
+@import "../../styles/base.scss";
+
+:local {
+  .rueckblick {
+    margin-bottom: 160px;
+    & > h2 {
+      color: $Hauptfarbe-TSB-Dunkelblau;
+      width: fit-content;
+      margin: 80px calc(((1280px - 1344px) / 2) + 24px + 90px);
+      // width: 1344px;
+    }
+    .sliderWrapper {
+      display: grid;
+      grid-template-columns: 90px 1fr 90px;
+      gap: 24px;
+      align-items: center;
+      width: 1344px;
+      margin-left: calc((1280px - 1344px) / 2);
+      .sliderNew {
+        overflow: hidden;
+        .contentSlider {
+          display: flex;
+          align-items: stretch;
+          transform: translateX(0);
+          height: 544px;
+          transition: $transition-slow;
+          .slide {
+            min-width: 100%;
+            display: flex;
+            gap: 24px;
+            .content {
+              padding: 32px 24px;
+              border: 4px solid $Hauptfarbe-TSB-Dunkelblau;
+              width: 30%;
+              h4 {
+                color: $Hauptfarbe-TSB-Dunkelblau;
+                margin-bottom: 32px;
+              }
+              & > p {
+                @include body-intro;
+                color: $Hauptfarbe-TSB-Dunkelblau;
+                margin-bottom: 32px;
+              }
+            }
+            .bg {
+              background-size: 120%;
+              width: 70%;
+              background-position: center;
+              background-repeat: no-repeat;
+              transition: $transition-slow;
+              &:hover {
+                background-size: 130%;
+              }
+            }
+          }
+        }
+      }
+      .arrow {
+        width: 90px;
+        cursor: pointer;
+        &:first-of-type {
+        }
+        &:last-of-type {
+        }
+      }
+    }
+    .nav {
+      text-align: center;
+      @include body-bold;
+      padding-top: 32px;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

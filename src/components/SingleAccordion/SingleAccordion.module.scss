@@ -1,0 +1,45 @@
+@import "../../styles/base.scss";
+
+:local {
+  .accordion {
+    width: 100%;
+    padding: 16px 0;
+    .clickable {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-top: 2px solid $Hauptfarbe-TSB-Dunkelblau;
+      background: rgba(30, 55, 145, 0.08);
+      cursor: pointer;
+      padding: 8px;
+      & > img {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+        transition: $transition-slow;
+        &.turned {
+          transform: rotate(90deg);
+        }
+      }
+      .title {
+        @include body-bold;
+        color: $Hauptfarbe-TSB-Dunkelblau;
+      }
+    }
+    .panel {
+      transition: $transition-slow;
+      overflow: hidden;
+      background: rgba(30, 55, 145, 0.08);
+      .paragraph {
+        padding: 24px 0;
+        max-width: 552px;
+        p {
+          @include body;
+          color: $Hauptfarbe-TSB-Dunkelblau;
+          border-left: 2px solid $Hauptfarbe-TSB-Dunkelblau;
+          padding: 0 48px;
+        }
+      }
+    }
+  }
+}

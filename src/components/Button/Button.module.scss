@@ -1,0 +1,32 @@
+@import "../../styles/base.scss";
+:local {
+  .btn {
+    text-decoration: none;
+    padding: 8px 16px 8px 8px;
+    border: 2px solid var(--Hauptfarbe-TSB-Dunkelblau, #1e3791);
+    background: #fff;
+    color: $Hauptfarbe-TSB-Dunkelblau;
+    transition: $transition-fast;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    p {
+      @include body-bold;
+      width: auto;
+      margin: 0;
+      transform: translateY(1px);
+    }
+    img {
+      margin-right: 4px;
+      height: 16px;
+      width: 16px;
+    }
+    &:hover {
+      color: white;
+      background: $Hauptfarbe-TSB-Dunkelblau;
+      p {
+        color: white !important;
+      }
+    }
+  }
+}
