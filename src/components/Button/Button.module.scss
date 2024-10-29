@@ -5,7 +5,7 @@
     padding: 8px 16px 8px 8px;
     border: 2px solid var(--Hauptfarbe-TSB-Dunkelblau, #1e3791);
     background: #fff;
-    color: $Hauptfarbe-TSB-Dunkelblau;
+    color: $color-primary-dark;
     transition: $transition-fast;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@
     }
     &:hover {
       color: white;
-      background: $Hauptfarbe-TSB-Dunkelblau;
+      background: $color-primary-dark;
       p {
         color: white !important;
       }

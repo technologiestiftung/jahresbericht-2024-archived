@@ -8,7 +8,7 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      border-top: 2px solid $Hauptfarbe-TSB-Dunkelblau;
+      border-top: 2px solid $color-primary-dark;
       background: rgba(30, 55, 145, 0.08);
       cursor: pointer;
       padding: 8px;
@@ -23,7 +23,7 @@
       }
       .title {
         @include body-bold;
-        color: $Hauptfarbe-TSB-Dunkelblau;
+        color: $color-primary-dark;
       }
     }
     .panel {
@@ -35,8 +35,8 @@
         max-width: 552px;
         p {
           @include body;
-          color: $Hauptfarbe-TSB-Dunkelblau;
-          border-left: 2px solid $Hauptfarbe-TSB-Dunkelblau;
+          color: $color-primary-dark;
+          border-left: 2px solid $color-primary-dark;
           padding: 0 48px;
         }
       }

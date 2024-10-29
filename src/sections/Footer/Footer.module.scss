@@ -20,7 +20,7 @@
     }
   }
   .last {
-    background: $Hauptfarbe-TSB-Dunkelblau;
+    background: $color-primary-dark;
     @media screen and (min-width: $absolute-break) {
       width: 100vw;
       margin-left: calc(-50vw + 50%);

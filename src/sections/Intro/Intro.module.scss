@@ -1,7 +1,7 @@
 @import "src/styles/base.scss";
 
 .intro {
-  background-color: $Hauptfarbe-TSB-Dunkelblau;
+  background-color: $color-primary-dark;
 
   @media screen and (max-width: $absolute-break) {
     height: auto;
