@@ -10,6 +10,11 @@
     "plugin:react/jsx-runtime",
     "plugin:prettier/recommended"
   ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "parserOptions": {
     "sourceType": "module"
   },
