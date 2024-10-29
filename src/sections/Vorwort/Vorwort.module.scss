@@ -52,5 +52,19 @@
         }
       }
     }
+
+    @media screen and (max-width: $absolute-break) {
+      width: 100%;
+      box-sizing: border-box;
+      padding: $spacing-xxxl $spacing-l;
+      h2 {
+        margin: 0;
+        margin-bottom: $spacing-xxxl;
+      }
+      .peopleWrapper {
+        flex-direction: column;
+        gap: $spacing-xxxl;
+      }
+    }
   }
 }
