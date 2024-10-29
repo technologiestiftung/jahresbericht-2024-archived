@@ -18,7 +18,10 @@
   line-height: 48px;
   margin: 0;
   @media screen and (max-width: $absolute-break) {
-    // font-size: 14px;
+    font-family: "Source Serif Pro";
+    font-size: 20px;
+    font-style: normal;
+    line-height: 28px;
   }
 }
 @mixin body-bold {
