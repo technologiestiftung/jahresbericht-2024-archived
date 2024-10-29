@@ -1,54 +1,63 @@
 @import "src/styles/base.scss";
 
-:local {
-  .wrapper {
-    background-color: $Hauptfarbe-TSB-Dunkelblau;
+.intro {
+  background-color: $Hauptfarbe-TSB-Dunkelblau;
+
+  @media screen and (max-width: $absolute-break) {
+    height: auto;
+    min-height: 100vh;
+    padding: $spacing-xxxl $spacing-l;
+  }
+  @media screen and (min-width: $absolute-break) {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    height: 100vh;
+    max-height: $max-height-section;
+  }
+
+  .content {
+    display: flex;
+    height: 100%;
+
     @media screen and (max-width: $absolute-break) {
-      height: auto;
-      min-height: 100vh;
-      padding: 0 8px;
+      flex-direction: column;
     }
+
     @media screen and (min-width: $absolute-break) {
-      width: 100vw;
-      margin-left: calc(-50vw + 50%);
-      height: 100vh;
-      max-height: $max-height-section;
+      max-width: 1120px;
+      margin: 0 auto;
     }
-    & > div {
-      display: flex;
-      height: 100%;
-      @media screen and (max-width: $absolute-break) {
-        flex-direction: column;
-      }
-      @media screen and (min-width: $absolute-break) {
-        max-width: 1120px;
-        margin: 0 auto;
-      }
-      & > div {
-        @media screen and (min-width: $absolute-break) {
-          width: 50%;
-        }
-      }
-      & > div:first-of-type {
-        padding-top: 8.3%;
-        .logo {
-          height: 68.835px;
-          margin-bottom: 7.4%;
-        }
-      }
-      & > div:last-of-type {
-        display: flex;
-        align-items: center;
+
+    .logoAndHeadline {
+      padding-top: 8.3%;
+      .logo {
+        height: $spacing-xxxl;
+        margin-bottom: $spacing-s;
+
         @media screen and (max-width: $absolute-break) {
-          align-self: flex-end;
+          margin-bottom: $spacing-xl;
         }
+      }
+    }
+
+    .headerImage {
+      display: flex;
+      align-items: center;
+
+      @media screen and (max-width: $absolute-break) {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+
         .header {
-          @media screen and (max-width: $absolute-break) {
-            height: 90px;
-          }
-          @media screen and (min-width: $absolute-break) {
-            width: 100%;
-          }
+          margin-top: $spacing-xl;
+          width: 80%;
+        }
+      }
+
+      @media screen and (min-width: $absolute-break) {
+        .header {
+          width: 100%;
         }
       }
     }

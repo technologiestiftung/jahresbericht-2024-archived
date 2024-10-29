@@ -3,9 +3,16 @@
 :local {
   .wrapper {
     background-color: $Hauptfarbe-TSB-Dunkelblau;
-    width: 100vw;
+    width: 100%;
     margin-left: calc(-50vw + 50%);
-    color: white;
+    color: $color-white;
+
+    @media screen and (max-width: $absolute-break) {
+      width: 100%;
+      box-sizing: border-box;
+      padding: $spacing-xxxl $spacing-l;
+    }
+
     .content {
       max-width: 1120px;
       margin: 0 auto;
@@ -14,21 +21,18 @@
       align-items: center;
       @media screen and (max-width: $absolute-break) {
         min-height: 100vh;
-        padding: 0 8px;
+        width: 100%;
+        box-sizing: border-box;
       }
       @media screen and (min-width: $absolute-break) {
         height: 100vh;
         max-height: $max-height-section;
       }
       & > div:first-of-type {
-        // width: 30%;
         width: 204px;
-        // padding-top: 294px;
       }
       & > div:last-of-type {
-        // width: 70%;
         flex: 1;
-        // padding-top: 196px;
         h2 {
           margin-bottom: 37px;
         }
