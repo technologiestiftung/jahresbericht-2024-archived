@@ -6,7 +6,7 @@ function MainSection({ content, icon }) {
   return (
     <section className={cn.wrapper} id={icon}>
       <div className={cn.content}>
-        {icon && <div>{!!icon && <NewIcons type={icon} />}</div>}
+        <div>{!!icon && <NewIcons type={icon} />}</div>
         <div>
           <h2 className={cn.title}>{title}</h2>
           <p className={cn.subTitle}>{text}</p>

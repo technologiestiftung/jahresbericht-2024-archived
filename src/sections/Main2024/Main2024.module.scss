@@ -3,7 +3,7 @@
 :local {
   .wrapper {
     background-color: $color-primary-dark;
-    width: 100%;
+    width: 100vw;
     margin-left: calc(-50vw + 50%);
     color: $color-white;
 
@@ -19,11 +19,6 @@
       display: flex;
       gap: 84px;
       align-items: center;
-      @media screen and (max-width: $absolute-break) {
-        min-height: 100vh;
-        width: 100%;
-        box-sizing: border-box;
-      }
       @media screen and (min-width: $absolute-break) {
         height: 100vh;
         max-height: $max-height-section;
@@ -38,6 +33,16 @@
         }
         p {
           @include body-intro;
+        }
+      }
+
+      @media screen and (max-width: $absolute-break) {
+        flex-direction: column-reverse;
+        min-height: 100vh;
+        width: 100%;
+        box-sizing: border-box;
+        & > div:first-of-type {
+          width: 100%;
         }
       }
     }
