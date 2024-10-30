@@ -42,7 +42,7 @@ h1 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  color: white;
+  color: $color-white;
   margin: 0;
   @media screen and (max-width: $absolute-break) {
     font-size: 40px;
@@ -57,27 +57,27 @@ h2 {
   color: white;
   margin: 0;
   @media screen and (max-width: $absolute-break) {
-    font-size: 20px;
+    font-size: $spacing-xl;
   }
 }
 h3 {
   font-family: "Clan Pro";
-  font-size: 24px;
+  font-size: $spacing-xl;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   margin: 0;
   @media screen and (max-width: $absolute-break) {
-    font-size: 20px;
+    font-size: $spacing-l;
   }
 }
 h4 {
   font-family: "Clan Pro";
-  font-size: 24px;
+  font-size: $spacing-l;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  color: white;
+  color: $color-white;
   margin: 0;
   @media screen and (max-width: $absolute-break) {
     font-size: 20px;

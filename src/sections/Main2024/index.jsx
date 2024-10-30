@@ -1,5 +1,5 @@
-import cn from "./Main2024.module.scss";
 import NewIcons from "../../components/NewIcons";
+import cn from "./Main2024.module.scss";
 
 function MainSection({ content, icon }) {
   const { title, text } = content;
